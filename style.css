@@ -62,3 +62,68 @@ footer{padding:25px 10vw;border-top:1px solid var(--line);display:flex;justify-c
   letter-spacing: 1px;
   margin-top: 18px;
 }
+.danger-zone {
+  text-align: center;
+  border-top: 1px solid #315b34;
+}
+
+.danger-button {
+  background: transparent;
+  color: #72ff3b;
+  border: 2px solid #72ff3b;
+  padding: 20px 45px;
+  font: bold 18px "Share Tech Mono";
+  cursor: pointer;
+  animation: dangerPulse 1.5s infinite;
+}
+
+@keyframes dangerPulse {
+  50% {
+    box-shadow: 0 0 25px #72ff3b88;
+  }
+}
+
+.crash-screen {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: #020502;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.crash-screen.active {
+  display: flex;
+  animation: glitch .2s infinite;
+}
+
+.crash-box {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  font-family: "Share Tech Mono";
+}
+
+.crash-box h1 {
+  color: #72ff3b;
+  font-size: 55px;
+}
+
+.crash-box p {
+  color: #72ff3b;
+}
+
+#terminalText {
+  color: #72ff3b;
+  text-align: left;
+  line-height: 2;
+  margin: 25px auto;
+}
+
+@keyframes glitch {
+  0% { transform: translate(1px,0); }
+  50% { transform: translate(-1px,1px); }
+  100% { transform: translate(0,-1px); }
+}
