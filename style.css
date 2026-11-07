@@ -13,3 +13,52 @@ h1{font-size:clamp(58px,10vw,130px);line-height:.83;letter-spacing:-.09em;margin
 .poster-placeholder{max-width:560px;border:1px solid #386334;background:radial-gradient(circle at 50% 40%,#23451d,#071009 70%);padding:35px;text-align:center}.poster-inner{min-height:360px;border:1px solid #72ff3b66;display:flex;flex-direction:column;align-items:center;justify-content:center;text-shadow:0 0 20px #72ff3b66;color:var(--green);font-family:"Share Tech Mono",monospace}.poster-inner strong{font-size:150px;line-height:1}.poster-inner small{letter-spacing:5px}.poster-inner b{font-size:20px;letter-spacing:3px}.poster-inner p{font-size:11px;letter-spacing:2px}
 footer{padding:25px 10vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#7e9181;font:11px "Share Tech Mono",monospace}
 @media(max-width:700px){.topbar{padding:0 5vw}.topbar nav{display:none}.system-status{font-size:9px}.hero{padding:85px 7vw 65px;min-height:650px}.hero-code{right:-35px;top:300px;font-size:150px}.section{padding:70px 7vw}.track-card{grid-template-columns:1fr}.track-art{max-width:230px}.logs{grid-template-columns:1fr}.poster-placeholder{padding:15px}.poster-inner{min-height:300px}.poster-inner strong{font-size:110px}footer{padding:22px 7vw}}
+.poster-showcase {
+  max-width: 620px;
+  margin: 30px auto;
+  padding: 25px;
+  background: linear-gradient(145deg, #102416, #050a06);
+  border: 1px solid #315b34;
+  box-shadow: 0 0 35px #72ff3b18;
+}
+
+.poster-frame {
+  padding: 12px;
+  background: #050805;
+  border: 1px solid #72ff3b;
+  box-shadow: 0 0 25px #72ff3b30;
+}
+
+.poster-top, .poster-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 5px;
+  color: #72ff3b;
+  font: 10px "Share Tech Mono", monospace;
+  letter-spacing: 1px;
+}
+
+.poster-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #315b34;
+  transition: .3s;
+}
+
+.poster-frame img:hover {
+  filter: brightness(1.12);
+  transform: scale(1.01);
+}
+
+.poster-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: #72ff3b;
+  font: 10px "Share Tech Mono", monospace;
+  letter-spacing: 1px;
+  margin-top: 18px;
+}
